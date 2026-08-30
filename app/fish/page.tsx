@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 import { CreatureBrowser } from './creature-browser';
@@ -7,6 +6,7 @@ import { CreatureBrowser } from './creature-browser';
 export const metadata: Metadata = {
   title: 'All Fish in How to Fish | Locations, Baits & Lures',
   description: 'Find all 49 How to Fish creatures, including rods, lures, boss baits, and progression requirements.',
+  alternates: { canonical: '/fish' },
 };
 
 export default function FishPage() {
@@ -15,7 +15,7 @@ export default function FishPage() {
       <Header />
       <main className="database-page">
         <header className="database-header inner-hero">
-          <nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>Fish &amp; Lures</span></nav>
+          <nav className="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>Fish &amp; Lures</span></nav>
           <p className="field-label">Creature database</p>
           <h1>All Fish in How to Fish</h1>
           <p>Find all 49 creatures, their rods, lures, boss baits, and progression requirements.</p>

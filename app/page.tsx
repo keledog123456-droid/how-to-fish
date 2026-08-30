@@ -1,5 +1,12 @@
+import type { Metadata } from 'next';
 import { Footer } from './components/footer';
 import { Header } from './components/header';
+
+export const metadata: Metadata = {
+  title: 'How to Fish Game Guide | Walkthrough, Map, Fish & Speedrun',
+  description: 'Independent How to Fish game guide with a complete walkthrough, island map, all fish and lures, boss progression, and the Bean speedrun route.',
+  alternates: { canonical: '/' },
+};
 
 const quickLinks = [
   { label: 'HOW TO START', description: 'Begin at the Lighthouse', icon: '01', href: '/walkthrough#lighthouse' },

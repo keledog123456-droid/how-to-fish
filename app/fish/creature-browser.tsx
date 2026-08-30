@@ -1,7 +1,6 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import Link from 'next/link';
 
 type RegularCreature = { name: string; rod: string; lure: string; tier: string };
 type BossCreature = { name: string; location: string; bait: string };
@@ -110,7 +109,7 @@ export function CreatureBrowser() {
         <div className="group-heading"><h3 id="boss-title">Bosses &amp; Minibosses</h3><span>{filteredBosses.length} bosses</span></div>
         <div className="creature-table boss-table">
           <div className="creature-table-head"><span>Boss</span><span>Progression location</span><span>Required bait / trigger</span></div>
-          {filteredBosses.map((boss) => <div className="creature-row" key={boss.name}><strong>{boss.name === 'Giant Piranha' && !isDrip ? <Link className="creature-detail-link" href="/fish/giant-piranha">{boss.name}<span aria-hidden="true">↗</span></Link> : <>{boss.name}{isDrip ? ' — Drip' : ''}</>}</strong><span>{boss.location}</span><span>{boss.bait}</span></div>)}
+          {filteredBosses.map((boss) => <div className="creature-row" key={boss.name}><strong>{boss.name === 'Giant Piranha' && !isDrip ? <a className="creature-detail-link" href="/fish/giant-piranha">{boss.name}<span aria-hidden="true">↗</span></a> : <>{boss.name}{isDrip ? ' — Drip' : ''}</>}</strong><span>{boss.location}</span><span>{boss.bait}</span></div>)}
         </div>
         {!isDrip && <p className="boss-footnote">Sunfish and The Old Pike share the Beginner Boss Lure, so 11 bosses do not require 11 unique boss baits.</p>}
       </section>}

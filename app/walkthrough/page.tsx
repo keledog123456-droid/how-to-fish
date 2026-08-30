@@ -4,6 +4,7 @@ import { GuidePage } from '../components/guide-page';
 export const metadata: Metadata = {
   title: 'How to Fish Game Guide | Complete Walkthrough',
   description: 'Follow the complete story route from Lighthouse through Forest, Desert, Rocks, Volcano, and the ending.',
+  alternates: { canonical: '/walkthrough' },
 };
 
 const sections = [

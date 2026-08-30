@@ -1,15 +1,15 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { GuidePage } from '../components/guide-page';
 
 export const metadata: Metadata = {
   title: 'How to Fish Map | All Islands and Locations',
   description: 'See the five main progression locations, their Radar markers, relative directions, and unlock requirements.',
+  alternates: { canonical: '/map' },
 };
 
 const locations = [
   { id: 'lighthouse', title: 'Lighthouse', label: 'Start', content: <p>The starting position. Complete the Spider Crab opening chain to obtain boat access or keys and the Radar.</p> },
-  { id: 'forest', title: 'Forest', label: 'Green · Northwest', content: <p>Follow the green Radar contact, roughly northwest of Lighthouse. Complete the <Link href="/walkthrough#forest">Giant Piranha chain</Link> to unlock Desert.</p> },
+  { id: 'forest', title: 'Forest', label: 'Green · Northwest', content: <p>Follow the green Radar contact, roughly northwest of Lighthouse. Complete the <a href="/walkthrough#forest">Giant Piranha chain</a> to unlock Desert.</p> },
   { id: 'desert', title: 'Desert', label: 'Yellow · West', content: <p>West of Forest. Complete the endangered catch and Pufferfish chain, then return the Pufferfish Fin to unlock Rocks.</p> },
   { id: 'rocks', title: 'Rocks', label: 'Red · West', content: <p>West of Desert. Use Professional Boss Lure for Tuna, preserve its body to summon Albatross, and hand in the Albatross Head.</p> },
   { id: 'volcano', title: 'Volcano', label: 'Pink · North', content: <p>North of Rocks. It becomes available after the Albatross chain and contains the final story sequence.</p> },

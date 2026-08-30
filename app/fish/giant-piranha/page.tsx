@@ -4,15 +4,16 @@ import { Footer } from '../../components/footer';
 import { Header } from '../../components/header';
 
 export const metadata: Metadata = {
-  title: 'Giant Piranha | How to Fish Wiki',
+  title: 'How to Catch Giant Piranha in How to Fish | Boss Guide',
   description: 'How to summon Giant Piranha in the Forest, get Leech Bait, and complete the Forest to Desert progression.',
+  alternates: { canonical: '/fish/giant-piranha' },
   openGraph: {
-    title: 'Giant Piranha | How to Fish Wiki',
+    title: 'How to Catch Giant Piranha in How to Fish',
     description: 'Verified bait, location, and Forest progression steps for Giant Piranha.',
     images: [],
   },
   twitter: {
-    title: 'Giant Piranha | How to Fish Wiki',
+    title: 'How to Catch Giant Piranha in How to Fish',
     description: 'Verified bait, location, and Forest progression steps for Giant Piranha.',
     images: [],
   },

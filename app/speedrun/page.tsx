@@ -4,6 +4,7 @@ import { GuidePage } from '../components/guide-page';
 export const metadata: Metadata = {
   title: 'How to Fish Speedrun Guide | Bean Achievement',
   description: 'Plan a current-version route for finishing How to Fish under 60 minutes and earning the Bean achievement.',
+  alternates: { canonical: '/speedrun' },
 };
 
 const sections = [

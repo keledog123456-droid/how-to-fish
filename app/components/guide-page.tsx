@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import type { ReactNode } from 'react';
 import { Footer } from './footer';
 import { Header } from './header';
@@ -36,7 +35,7 @@ export function GuidePage({
       <Header />
       <main className="detail-page">
         <div className="inner-hero">
-          <nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><span>{eyebrow}</span></nav>
+          <nav className="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><span>{eyebrow}</span></nav>
           <p className="inner-hero-kicker">{eyebrow}</p><h1>{title}</h1><p>{description}</p>
         </div>
         <div className="detail-layout">
@@ -66,7 +65,7 @@ export function GuidePage({
 
             <section className="related-links" aria-labelledby="related-guides">
               <div><p className="section-kicker">Keep exploring</p><h2 id="related-guides">Related guides</h2></div>
-              {related.map((link) => <Link href={link.href} key={link.href}><span>{link.label}</span><strong>{link.title}</strong></Link>)}
+              {related.map((link) => <a href={link.href} key={link.href}><span>{link.label}</span><strong>{link.title}</strong></a>)}
             </section>
           </article>
 
@@ -74,7 +73,7 @@ export function GuidePage({
             <h2>On this page</h2>
             <nav aria-label="On this page">{sections.map((section) => <a href={`#${section.id}`} key={section.id}>{section.title}</a>)}</nav>
             <div className="sidebar-divider" />
-            <Link href="/fish">All Fish &amp; Lures</Link>
+            <a href="/fish">All Fish &amp; Lures</a>
           </aside>
         </div>
       </main>

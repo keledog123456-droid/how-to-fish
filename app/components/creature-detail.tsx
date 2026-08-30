@@ -1,4 +1,3 @@
-import Link from 'next/link';
 
 export type CreatureDetailData = {
   name: string;
@@ -15,7 +14,7 @@ export function CreatureDetail({ creature }: { creature: CreatureDetailData }) {
   return (
     <main className="detail-page">
       <div className="inner-hero creature-hero">
-        <nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link><span>/</span><Link href="/fish">Fish &amp; Lures</Link><span>/</span><span>{creature.name}</span></nav>
+        <nav className="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/fish">Fish &amp; Lures</a><span>/</span><span>{creature.name}</span></nav>
         <p className="inner-hero-kicker">Creature record · Field notes</p><h1>{creature.name}</h1><p>{creature.description}</p>
       </div>
 
@@ -49,8 +48,8 @@ export function CreatureDetail({ creature }: { creature: CreatureDetailData }) {
 
           <nav className="related-links" id="related" aria-labelledby="related-heading">
             <div><p className="section-kicker">Keep exploring</p><h2 id="related-heading">Related information</h2></div>
-            <Link href="/fish"><span>Database</span><strong>Back to Fish &amp; Lures</strong></Link>
-            <Link href="/"><span>Field guide</span><strong>How to Fish home</strong></Link>
+            <a href="/fish"><span>Database</span><strong>Back to Fish &amp; Lures</strong></a>
+            <a href="/"><span>Field guide</span><strong>How to Fish home</strong></a>
           </nav>
         </article>
 
@@ -59,7 +58,7 @@ export function CreatureDetail({ creature }: { creature: CreatureDetailData }) {
           <nav aria-label="On this page"><a href="#quick-answer">Quick Answer</a><a href="#how-to-get">How to get Giant Piranha</a><a href="#why-it-matters">Why it matters</a><a href="#related">Related information</a></nav>
           <div className="sidebar-divider" />
           <h2>Creature navigation</h2>
-          <Link href="/fish">All Fish &amp; Lures</Link>
+          <a href="/fish">All Fish &amp; Lures</a>
         </aside>
       </div>
     </main>
