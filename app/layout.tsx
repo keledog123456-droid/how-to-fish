@@ -6,10 +6,7 @@ const almendra = Almendra({ variable: '--font-almendra', subsets: ['latin'], wei
 const nunitoSans = Nunito_Sans({ variable: '--font-nunito-sans', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    metadataBase: new URL('https://howtofish.win'),
-  alternates: {
-    canonical: '/',
-  },
+  metadataBase: new URL('https://howtofish.win'),
   title: 'How to Fish Wiki | Independent Game Guide',
   description: 'An independent How to Fish fan guide for walkthroughs, island navigation, creatures, lures, and the Bean speedrun.',
   manifest: '/site.webmanifest',
