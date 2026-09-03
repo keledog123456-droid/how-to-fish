@@ -465,3 +465,58 @@ body { min-width: 320px; overflow-x: hidden; background: var(--color-deep-ocean)
   .creature-row { font-size: 13px; }
   .creature-row strong { font-size: 14px; }
 }
+
+/* Map page polish */
+.theme-map .inner-hero {
+  position: relative;
+  min-height: 300px;
+  padding-top: 58px;
+}
+
+.theme-map .inner-hero .breadcrumb {
+  top: 16px;
+  left: max(32px, calc((100% - 1136px) / 2 + 32px));
+  z-index: 2;
+}
+
+.theme-map .checkpoint-list > span:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  border-right: 0;
+}
+
+@media (min-width: 861px) {
+  .theme-map .inner-hero {
+    min-height: 310px;
+  }
+
+  .theme-map .inner-hero .breadcrumb {
+    left: max(40px, calc((100% - 1280px) / 2 + 40px));
+  }
+}
+
+@media (max-width: 860px) {
+  .theme-map .inner-hero {
+    min-height: 300px;
+  }
+
+  .theme-map .inner-hero .breadcrumb {
+    left: 22px;
+  }
+}
+
+@media (max-width: 600px) {
+  .theme-map .inner-hero {
+    min-height: 320px;
+    padding-top: 64px;
+  }
+
+  .theme-map .inner-hero .breadcrumb {
+    top: 14px;
+    left: 16px;
+  }
+
+  .theme-map .checkpoint-list > span:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
+
