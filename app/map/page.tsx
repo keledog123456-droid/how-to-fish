@@ -128,6 +128,10 @@ const locations = [
           <strong> pink = Volcano</strong>. The compass directions on this page
           are approximate sailing cues, not exact numeric coordinates.
         </p>
+        <p>
+          If you are trying to buy the device, use it, upgrade it, or fix a missing
+          island marker, open the <a href="/radar">How to Fish Radar Guide</a>.
+        </p>
       </>
     ),
   },
@@ -156,7 +160,7 @@ const locations = [
           <strong>Why did the next island not appear?</strong><br />
           Finishing the boss fight may not be the last step. Make sure you picked
           up the required quest result, returned it to the correct NPC, and then
-          check the Radar again.
+          check the Radar again. See the <a href="/radar#not-working">Radar troubleshooting guide</a> for a faster checklist.
         </p>
       </>
     ),
@@ -183,6 +187,7 @@ export default function MapPage() {
       ]}
       sections={locations}
       related={[
+        { href: '/radar', label: 'Navigation tool', title: 'Radar Guide & Fixes' },
         { href: '/walkthrough', label: 'Progression', title: 'Complete Walkthrough' },
         { href: '/fish', label: 'Database', title: '49 Creatures & Lures' },
         { href: '/speedrun', label: 'Fast route', title: 'Bean Speedrun Guide' },
