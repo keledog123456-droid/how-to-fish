@@ -3,9 +3,9 @@
 import { useEffect } from 'react';
 
 const SCRIPT_SRC =
-  'https://pl31224898.profitableratecpmnetwork.com/9606d6fe7e4f963fae11cfd412f2504c/invoke.js';
+  'https://pl31225349.profitableratecpmnetwork.com/272ec937c29a6a1763a84dda3352a718/invoke.js';
 
-const CONTAINER_ID = 'container-9606d6fe7e4f963fae11cfd412f2504c';
+const CONTAINER_ID = 'container-272ec937c29a6a1763a84dda3352a718';
 
 export function AdBlock() {
   useEffect(() => {
