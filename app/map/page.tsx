@@ -21,6 +21,24 @@ const locations = [
           Lighthouse is the starting area; the other four destinations unlock as
           you complete the story chain and hand in the required quest item.
         </p>
+        <nav className="route-overview" aria-label="Simplified island route">
+          <p className="route-overview-note">
+            Simplified route overview, not an exact geographic map.
+          </p>
+          <ol>
+            {[
+              ['Lighthouse', '#lighthouse'],
+              ['Forest', '#forest'],
+              ['Desert', '#desert'],
+              ['Rocks', '#rocks'],
+              ['Volcano', '#volcano'],
+            ].map(([title, href]) => (
+              <li key={title}>
+                <a href={href}>{title}</a>
+              </li>
+            ))}
+          </ol>
+        </nav>
         <div className="checkpoint-list" aria-label="How to Fish map route">
           <span>
             <strong>1. Lighthouse</strong>
