@@ -15,6 +15,7 @@ const sections = [
     content: <>
       <p><strong>Bean</strong> requires finishing the game within one hour. Steam gives the 60-minute requirement, but does not document the exact internal timer start, pause behavior, or final timing frame.</p>
       <p>For a conservative attempt, use a fresh run and keep a continuous external timer. Do not stop at the final boss kill: return the Whale Fin, receive the RHIB keys, and activate the RHIB to finish the ending.</p>
+      <p><a href="/achievements/bean">Open the Bean achievement guide and practice timer →</a></p>
     </>,
   },
   {
